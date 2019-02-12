@@ -1,0 +1,43 @@
+﻿^ContentPage {
+    background-color: #2D354C;
+}
+
+.stackLayoutTitleView {
+    margin: -15,0,0,0;
+    padding: 15,0,15,0;
+    background-color: #2D354C;
+}
+
+.stackLayoutMaster {
+    padding: 15,25;
+    background-color: #2D354C;
+}
+
+.frameMaster {
+    background-color: white;
+    padding: 10;
+}
+
+.lblTitle {
+    font-style: Bold;
+    font-size: 16;
+    color: #2D354C;
+}
+
+.lblAuthor {
+    font-style: normal;
+    font-size: 12;
+    color: #2D354C;
+}
+
+.lblTag {
+    font-style: normal;
+    font-size: 12;
+    color: #2D354C;
+}
+
+.lblDescription {
+    font-style: normal;
+    font-size: 10;
+    color: #2D354C;
+}

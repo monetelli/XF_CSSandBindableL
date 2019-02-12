@@ -1,0 +1,139 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             xmlns:ViewModel="clr-namespace:XF_CSSandBindableL.ViewModels"
+             xmlns:Custom="clr-namespace:ImageCircle.Forms.Plugin.Abstractions;assembly=ImageCircle.Forms.Plugin"
+             x:Class="XF_CSSandBindableL.Views.BlogPage">
+    
+    <ContentPage.BindingContext>
+        <ViewModel:BlogViewModel/>
+    </ContentPage.BindingContext>
+
+
+    <NavigationPage.TitleView>
+        <StackLayout Orientation="Horizontal"
+                         Padding="15,0,15,0"
+                         Margin="-15,0,0,0"
+                         BackgroundColor="#2D354C">
+
+            <Label Text="Xamarin Blog"
+                   FontSize="20"
+                   TextColor="White"
+                   FontAttributes="Bold"
+                   VerticalOptions="CenterAndExpand"
+                   HorizontalOptions="StartAndExpand"/>
+            
+            <Switch Toggled="Switch_Toggled"
+                    HorizontalOptions="EndAndExpand"
+                    VerticalOptions="CenterAndExpand"/>
+            
+        </StackLayout>
+    </NavigationPage.TitleView>
+
+
+    <ContentPage.Content>
+
+        <Grid BackgroundColor="#2D354C">
+
+            <Grid.RowDefinitions>
+                <RowDefinition Height="Auto"/>
+                <RowDefinition Height="Auto"/>
+                <RowDefinition Height="*"/>
+            </Grid.RowDefinitions>
+
+
+            <ScrollView Grid.Row="1"
+                        Orientation="Horizontal">
+                <StackLayout BindableLayout.ItemsSource="{Binding ListPublications}" 
+                             Orientation="Horizontal"
+                             BackgroundColor="#2D354C"
+                             Padding="20,0"
+                             Spacing="20">
+                    <BindableLayout.ItemTemplate>
+                        <DataTemplate>
+
+                            <StackLayout BackgroundColor="#2D354C"
+                                         Spacing="3"
+                                         Orientation="Horizontal">
+                                <Label Text="{Binding Author}"
+                                       TextColor="White"
+                                       VerticalOptions="Center"/>
+                                <Custom:CircleImage Source="{Binding ImageAuthor}"
+                                                    BorderColor="#96F2A5"
+                                                    BorderThickness="1"
+                                                    WidthRequest="35"
+                                                    HeightRequest="35"
+                                                    VerticalOptions="Center"/>
+                            </StackLayout>
+
+                        </DataTemplate>
+                    </BindableLayout.ItemTemplate>
+                </StackLayout>
+            </ScrollView>
+
+            <ScrollView Grid.Row="0">
+                <StackLayout BindableLayout.ItemsSource="{Binding ListPublications}"
+                             StyleClass="stackLayoutMaster">
+                    <BindableLayout.ItemTemplate>
+                        <DataTemplate>
+
+                            <Grid>
+
+                                <Grid.RowDefinitions>
+                                    <RowDefinition Height="199"/>
+                                </Grid.RowDefinitions>
+
+                                <Frame StyleClass="frameMaster"
+                                       CornerRadius="10"
+                                       Grid.Row="0">
+
+                                    <StackLayout Orientation="Horizontal">
+
+                                        <StackLayout>
+
+                                            <Label Text="{Binding Title}"
+                                                   StyleClass="lblTitle"
+                                                   LineBreakMode="TailTruncation"/>
+
+
+                                            <StackLayout Orientation="Horizontal">
+                                                <Custom:CircleImage Source="{Binding ImageAuthor}"
+                                                                    BorderColor="#96F2A5"
+                                                                    BorderThickness="1"
+                                                                    WidthRequest="35"
+                                                                    HeightRequest="35"/>
+                                                <StackLayout Spacing="-2">
+                                                    <Label Text="{Binding Author}"
+                                                           StyleClass="lblAuthor"
+                                                           LineBreakMode="TailTruncation"/>
+
+                                                    <Label Text="{Binding Tag}"
+                                                           StyleClass="lblTag"
+                                                           LineBreakMode="TailTruncation"/>
+                                                </StackLayout>
+                                            </StackLayout>
+
+                                            <Label Text="{Binding Description}"
+                                                   StyleClass="lblDescription"
+                                                   MaxLines="9"
+                                                   LineBreakMode="TailTruncation"/>
+
+
+                                        </StackLayout>
+
+                                        <Image Source="{Binding ImagePost}"
+                                               HorizontalOptions="EndAndExpand"
+                                               WidthRequest="100"/>
+                                    </StackLayout>
+                                </Frame>
+                                
+                            </Grid>
+
+                        </DataTemplate>
+                    </BindableLayout.ItemTemplate>
+                </StackLayout>
+            </ScrollView>
+        </Grid>
+
+    </ContentPage.Content>
+</ContentPage>
