@@ -1,7 +1,7 @@
 ﻿
 Microsoft Visual Studio Solution File, Format Version 12.00
-# Visual Studio 15
-VisualStudioVersion = 15.0.28307.329
+# Visual Studio Version 16
+VisualStudioVersion = 16.0.28531.58
 MinimumVisualStudioVersion = 10.0.40219.1
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "XF_CSSandBindableL.Android", "XF_CSSandBindableL\XF_CSSandBindableL.Android\XF_CSSandBindableL.Android.csproj", "{6FD69530-3D8D-43AE-84ED-EC6C28E05FB1}"
 EndProject
@@ -9,7 +9,7 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "XF_CSSandBindableL.iOS", "X
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "XF_CSSandBindableL.UWP", "XF_CSSandBindableL\XF_CSSandBindableL.UWP\XF_CSSandBindableL.UWP.csproj", "{91A8B15E-CE78-40CB-8CFD-EB5B95037D84}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "XF_CSSandBindableL", "XF_CSSandBindableL\XF_CSSandBindableL\XF_CSSandBindableL.csproj", "{FDE25208-68DE-4955-9268-48C596345966}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "XF_CSSandBindableL", "XF_CSSandBindableL\XF_CSSandBindableL\XF_CSSandBindableL.csproj", "{FDE25208-68DE-4955-9268-48C596345966}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -31,6 +31,12 @@ Global
 		Debug|iPhoneSimulator = Debug|iPhoneSimulator
 		Debug|x64 = Debug|x64
 		Debug|x86 = Debug|x86
+		Gorilla|Any CPU = Gorilla|Any CPU
+		Gorilla|ARM = Gorilla|ARM
+		Gorilla|iPhone = Gorilla|iPhone
+		Gorilla|iPhoneSimulator = Gorilla|iPhoneSimulator
+		Gorilla|x64 = Gorilla|x64
+		Gorilla|x86 = Gorilla|x86
 		Release|Any CPU = Release|Any CPU
 		Release|ARM = Release|ARM
 		Release|iPhone = Release|iPhone
@@ -93,6 +99,24 @@ Global
 		{6FD69530-3D8D-43AE-84ED-EC6C28E05FB1}.Debug|x86.ActiveCfg = Debug|Any CPU
 		{6FD69530-3D8D-43AE-84ED-EC6C28E05FB1}.Debug|x86.Build.0 = Debug|Any CPU
 		{6FD69530-3D8D-43AE-84ED-EC6C28E05FB1}.Debug|x86.Deploy.0 = Debug|Any CPU
+		{6FD69530-3D8D-43AE-84ED-EC6C28E05FB1}.Gorilla|Any CPU.ActiveCfg = Gorilla|Any CPU
+		{6FD69530-3D8D-43AE-84ED-EC6C28E05FB1}.Gorilla|Any CPU.Build.0 = Gorilla|Any CPU
+		{6FD69530-3D8D-43AE-84ED-EC6C28E05FB1}.Gorilla|Any CPU.Deploy.0 = Gorilla|Any CPU
+		{6FD69530-3D8D-43AE-84ED-EC6C28E05FB1}.Gorilla|ARM.ActiveCfg = Gorilla|Any CPU
+		{6FD69530-3D8D-43AE-84ED-EC6C28E05FB1}.Gorilla|ARM.Build.0 = Gorilla|Any CPU
+		{6FD69530-3D8D-43AE-84ED-EC6C28E05FB1}.Gorilla|ARM.Deploy.0 = Gorilla|Any CPU
+		{6FD69530-3D8D-43AE-84ED-EC6C28E05FB1}.Gorilla|iPhone.ActiveCfg = Gorilla|Any CPU
+		{6FD69530-3D8D-43AE-84ED-EC6C28E05FB1}.Gorilla|iPhone.Build.0 = Gorilla|Any CPU
+		{6FD69530-3D8D-43AE-84ED-EC6C28E05FB1}.Gorilla|iPhone.Deploy.0 = Gorilla|Any CPU
+		{6FD69530-3D8D-43AE-84ED-EC6C28E05FB1}.Gorilla|iPhoneSimulator.ActiveCfg = Gorilla|Any CPU
+		{6FD69530-3D8D-43AE-84ED-EC6C28E05FB1}.Gorilla|iPhoneSimulator.Build.0 = Gorilla|Any CPU
+		{6FD69530-3D8D-43AE-84ED-EC6C28E05FB1}.Gorilla|iPhoneSimulator.Deploy.0 = Gorilla|Any CPU
+		{6FD69530-3D8D-43AE-84ED-EC6C28E05FB1}.Gorilla|x64.ActiveCfg = Gorilla|Any CPU
+		{6FD69530-3D8D-43AE-84ED-EC6C28E05FB1}.Gorilla|x64.Build.0 = Gorilla|Any CPU
+		{6FD69530-3D8D-43AE-84ED-EC6C28E05FB1}.Gorilla|x64.Deploy.0 = Gorilla|Any CPU
+		{6FD69530-3D8D-43AE-84ED-EC6C28E05FB1}.Gorilla|x86.ActiveCfg = Gorilla|Any CPU
+		{6FD69530-3D8D-43AE-84ED-EC6C28E05FB1}.Gorilla|x86.Build.0 = Gorilla|Any CPU
+		{6FD69530-3D8D-43AE-84ED-EC6C28E05FB1}.Gorilla|x86.Deploy.0 = Gorilla|Any CPU
 		{6FD69530-3D8D-43AE-84ED-EC6C28E05FB1}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{6FD69530-3D8D-43AE-84ED-EC6C28E05FB1}.Release|Any CPU.Build.0 = Release|Any CPU
 		{6FD69530-3D8D-43AE-84ED-EC6C28E05FB1}.Release|Any CPU.Deploy.0 = Release|Any CPU
@@ -165,6 +189,14 @@ Global
 		{1C686B4D-7BCC-4E37-AE41-68614E63CE1F}.Debug|x86.ActiveCfg = Debug|iPhone
 		{1C686B4D-7BCC-4E37-AE41-68614E63CE1F}.Debug|x86.Build.0 = Debug|iPhone
 		{1C686B4D-7BCC-4E37-AE41-68614E63CE1F}.Debug|x86.Deploy.0 = Debug|iPhone
+		{1C686B4D-7BCC-4E37-AE41-68614E63CE1F}.Gorilla|Any CPU.ActiveCfg = Gorilla|iPhone
+		{1C686B4D-7BCC-4E37-AE41-68614E63CE1F}.Gorilla|ARM.ActiveCfg = Gorilla|iPhone
+		{1C686B4D-7BCC-4E37-AE41-68614E63CE1F}.Gorilla|iPhone.ActiveCfg = Gorilla|iPhone
+		{1C686B4D-7BCC-4E37-AE41-68614E63CE1F}.Gorilla|iPhone.Build.0 = Gorilla|iPhone
+		{1C686B4D-7BCC-4E37-AE41-68614E63CE1F}.Gorilla|iPhoneSimulator.ActiveCfg = Gorilla|iPhoneSimulator
+		{1C686B4D-7BCC-4E37-AE41-68614E63CE1F}.Gorilla|iPhoneSimulator.Build.0 = Gorilla|iPhoneSimulator
+		{1C686B4D-7BCC-4E37-AE41-68614E63CE1F}.Gorilla|x64.ActiveCfg = Gorilla|iPhone
+		{1C686B4D-7BCC-4E37-AE41-68614E63CE1F}.Gorilla|x86.ActiveCfg = Gorilla|iPhone
 		{1C686B4D-7BCC-4E37-AE41-68614E63CE1F}.Release|Any CPU.ActiveCfg = Release|iPhone
 		{1C686B4D-7BCC-4E37-AE41-68614E63CE1F}.Release|Any CPU.Build.0 = Release|iPhone
 		{1C686B4D-7BCC-4E37-AE41-68614E63CE1F}.Release|Any CPU.Deploy.0 = Release|iPhone
@@ -237,6 +269,18 @@ Global
 		{91A8B15E-CE78-40CB-8CFD-EB5B95037D84}.Debug|x86.ActiveCfg = Debug|x86
 		{91A8B15E-CE78-40CB-8CFD-EB5B95037D84}.Debug|x86.Build.0 = Debug|x86
 		{91A8B15E-CE78-40CB-8CFD-EB5B95037D84}.Debug|x86.Deploy.0 = Debug|x86
+		{91A8B15E-CE78-40CB-8CFD-EB5B95037D84}.Gorilla|Any CPU.ActiveCfg = Gorilla|x86
+		{91A8B15E-CE78-40CB-8CFD-EB5B95037D84}.Gorilla|ARM.ActiveCfg = Gorilla|ARM
+		{91A8B15E-CE78-40CB-8CFD-EB5B95037D84}.Gorilla|ARM.Build.0 = Gorilla|ARM
+		{91A8B15E-CE78-40CB-8CFD-EB5B95037D84}.Gorilla|ARM.Deploy.0 = Gorilla|ARM
+		{91A8B15E-CE78-40CB-8CFD-EB5B95037D84}.Gorilla|iPhone.ActiveCfg = Gorilla|x86
+		{91A8B15E-CE78-40CB-8CFD-EB5B95037D84}.Gorilla|iPhoneSimulator.ActiveCfg = Gorilla|x86
+		{91A8B15E-CE78-40CB-8CFD-EB5B95037D84}.Gorilla|x64.ActiveCfg = Gorilla|x64
+		{91A8B15E-CE78-40CB-8CFD-EB5B95037D84}.Gorilla|x64.Build.0 = Gorilla|x64
+		{91A8B15E-CE78-40CB-8CFD-EB5B95037D84}.Gorilla|x64.Deploy.0 = Gorilla|x64
+		{91A8B15E-CE78-40CB-8CFD-EB5B95037D84}.Gorilla|x86.ActiveCfg = Gorilla|x86
+		{91A8B15E-CE78-40CB-8CFD-EB5B95037D84}.Gorilla|x86.Build.0 = Gorilla|x86
+		{91A8B15E-CE78-40CB-8CFD-EB5B95037D84}.Gorilla|x86.Deploy.0 = Gorilla|x86
 		{91A8B15E-CE78-40CB-8CFD-EB5B95037D84}.Release|Any CPU.ActiveCfg = Release|x86
 		{91A8B15E-CE78-40CB-8CFD-EB5B95037D84}.Release|Any CPU.Build.0 = Release|x86
 		{91A8B15E-CE78-40CB-8CFD-EB5B95037D84}.Release|Any CPU.Deploy.0 = Release|x86
@@ -309,6 +353,18 @@ Global
 		{FDE25208-68DE-4955-9268-48C596345966}.Debug|x86.ActiveCfg = Debug|Any CPU
 		{FDE25208-68DE-4955-9268-48C596345966}.Debug|x86.Build.0 = Debug|Any CPU
 		{FDE25208-68DE-4955-9268-48C596345966}.Debug|x86.Deploy.0 = Debug|Any CPU
+		{FDE25208-68DE-4955-9268-48C596345966}.Gorilla|Any CPU.ActiveCfg = Gorilla|Any CPU
+		{FDE25208-68DE-4955-9268-48C596345966}.Gorilla|Any CPU.Build.0 = Gorilla|Any CPU
+		{FDE25208-68DE-4955-9268-48C596345966}.Gorilla|ARM.ActiveCfg = Gorilla|Any CPU
+		{FDE25208-68DE-4955-9268-48C596345966}.Gorilla|ARM.Build.0 = Gorilla|Any CPU
+		{FDE25208-68DE-4955-9268-48C596345966}.Gorilla|iPhone.ActiveCfg = Gorilla|Any CPU
+		{FDE25208-68DE-4955-9268-48C596345966}.Gorilla|iPhone.Build.0 = Gorilla|Any CPU
+		{FDE25208-68DE-4955-9268-48C596345966}.Gorilla|iPhoneSimulator.ActiveCfg = Gorilla|Any CPU
+		{FDE25208-68DE-4955-9268-48C596345966}.Gorilla|iPhoneSimulator.Build.0 = Gorilla|Any CPU
+		{FDE25208-68DE-4955-9268-48C596345966}.Gorilla|x64.ActiveCfg = Gorilla|Any CPU
+		{FDE25208-68DE-4955-9268-48C596345966}.Gorilla|x64.Build.0 = Gorilla|Any CPU
+		{FDE25208-68DE-4955-9268-48C596345966}.Gorilla|x86.ActiveCfg = Gorilla|Any CPU
+		{FDE25208-68DE-4955-9268-48C596345966}.Gorilla|x86.Build.0 = Gorilla|Any CPU
 		{FDE25208-68DE-4955-9268-48C596345966}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{FDE25208-68DE-4955-9268-48C596345966}.Release|Any CPU.Build.0 = Release|Any CPU
 		{FDE25208-68DE-4955-9268-48C596345966}.Release|Any CPU.Deploy.0 = Release|Any CPU

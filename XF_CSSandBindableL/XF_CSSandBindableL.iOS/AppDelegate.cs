@@ -23,6 +23,20 @@ namespace XF_CSSandBindableL.iOS
         public override bool FinishedLaunching(UIApplication app, NSDictionary options)
         {
             global::Xamarin.Forms.Forms.Init();
+
+            // DEBUG GORILLA PLAYER EN iOS
+            // ++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
+            var forceXamlOnlyTypeLoading = new[]
+            {
+                typeof(ImageCircle.Forms.Plugin.Abstractions.CircleImage),
+            };
+            // ++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
+
+            // LOTTIE FORMS Init() PARA iOS
+            // ++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
+            //AnimationViewRenderer.Init();
+            // ++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
+
             LoadApplication(new App());
 
             return base.FinishedLaunching(app, options);

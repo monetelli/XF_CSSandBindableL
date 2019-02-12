@@ -21,8 +21,22 @@ namespace XF_CSSandBindableL.Droid
             TabLayoutResource = Resource.Layout.Tabbar;
             ToolbarResource = Resource.Layout.Toolbar;
 
+            // DEBUG GORILLA PLAYER EN ANDROID
+            // +++++++++++++++++++++++++++++++++++++++++++++++++++++++++
+            var forceXamlOnlyTypeLoading = new[]
+            {
+                typeof(ImageCircle.Forms.Plugin.Abstractions.CircleImage),
+            };
+            // +++++++++++++++++++++++++++++++++++++++++++++++++++++++++
+
             base.OnCreate(savedInstanceState);
             global::Xamarin.Forms.Forms.Init(this, savedInstanceState);
+
+            // LOTTIE FORMS Init() PARA Android
+            // +++++++++++++++++++++++++++++++++++++++++++++++++++++++++
+            //AnimationViewRenderer.Init();
+            // +++++++++++++++++++++++++++++++++++++++++++++++++++++++++
+
             LoadApplication(new App());
         }
     }
