@@ -13,6 +13,9 @@ Example of the video tutorial of "Xamarin.Forms Update - Los enamorados CSS y Bi
 - Create themes with CSS in Xamarin.Forms.
 - The interface designs are in the "XD Project" folder.
 
+  <img alt="react-native-gifted-chat" src="https://raw.githubusercontent.com/monetelli/XF_CSSandBindableL/master/Images/CSS%20y%20BindableLayout.gif" width="260" height="510" />
+ </a>
+ 
 Watch this video for more details:
 <a href="https://www.youtube.com/watch?v=y8qzmYk229U">https://www.youtube.com/watch?v=y8qzmYk229U</a>
 
